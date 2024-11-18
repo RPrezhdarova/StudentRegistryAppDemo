@@ -14,7 +14,7 @@ pipeline{
                     }
                 }
             }
-        }
+        
         stage("Start application and run tests"){
             steps{
                 script{
@@ -24,7 +24,7 @@ pipeline{
                 }
             }
         }
-    
+    }
     post{
         always{
             echo "CI pipeline completed"
